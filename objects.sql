@@ -7,7 +7,7 @@ BEGIN execute immediate 'drop table CORONA_ES PURGE';EXCEPTION WHEN OTHERS THEN 
 BEGIN DBMS_CLOUD.drop_CREDENTIAL(credential_name => 'CORONACRED');EXCEPTION WHEN OTHERS THEN NULL; END;
 /
 begin
-    DBMS_CLOUD.CREATE_CREDENTIAL( credential_name => 'CORONACRED', username => 'alextorrijoserrano@gmail.com', password => 'm9G>(_vpWk4.c0Py}g}B');
+    DBMS_CLOUD.CREATE_CREDENTIAL( credential_name => 'CORONACRED', username => 'youruser', password => 'yourtoken');
     DBMS_CLOUD.CREATE_EXTERNAL_TABLE(   
       table_name =>'CORONAEXT',   
       credential_name =>'CORONACRED',   
