@@ -24,7 +24,8 @@ begin
             countriesAndTerritories varchar2(128),
             geoId varchar2(32),
             countryterritoryCode varchar2(32),
-            popData2018 number'
+            popData2019 number,
+            CONTINENTEXP VARCHAR2(32)'
             );
     --
     DBMS_CLOUD.VALIDATE_EXTERNAL_TABLE ('CORONAEXT');
