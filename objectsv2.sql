@@ -25,7 +25,8 @@ begin
             geoId varchar2(32),
             countryterritoryCode varchar2(32),
             popData2019 number,
-            CONTINENTEXP VARCHAR2(32)'
+            CONTINENTEXP VARCHAR2(32),
+            Cumulative_number_for_14_days_of_COVID-19_cases_per_100000 float'
             );
     --
     DBMS_CLOUD.VALIDATE_EXTERNAL_TABLE ('CORONAEXT');
